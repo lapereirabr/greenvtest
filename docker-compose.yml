@@ -1,0 +1,21 @@
+version: "3.3"
+services: 
+  app:
+    build: .
+    depends_on: 
+      - db
+    command: yarn dev
+    ports: 
+      - "4000:4000"
+    links: 
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    ports: 
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: 
+      POSTGRES_USER: postgres
+      POSTGRES_DB: greenv

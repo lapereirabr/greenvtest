@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "18df9022-6230-4364-8824-9b8bc6e21302",
+		"name": "Greenv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1490381"
+	},
+	"item": [
+		{
+			"name": "Companhia",
+			"item": [
+				{
+					"name": "Companhias",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "2b3375322b62e68dbb521252f06e41fff24e93d6",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/companhia",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"companhia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Inserção de Usuário",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "2b3375322b62e68dbb521252f06e41fff24e93d6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usu_nm\": \"Luis Alberto Pereira 2\",\r\n    \"usu_cpf\": 12345678900,\r\n    \"usu_email\": \"lapereira.br@gmail.com\",\r\n    \"usu_telef\": 1199991234,\r\n    \"usu_token\": \"2b3375322b62e68dbb521252f06e41fff\",\r\n    \"c_id\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Usuarios",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "2b3375322b62e68dbb521252f06e41fff24e93d6",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
